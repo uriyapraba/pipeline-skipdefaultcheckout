@@ -1,6 +1,6 @@
 pipeline
 {
-    agent any
+    agent none
     /*options
             {
                 skipDefaultCheckout()
@@ -10,10 +10,10 @@ pipeline
         stage('skipdefaltcheckout')
         {
             agent any
-            /*options
+            options
             {
                 skipDefaultCheckout()
-            }*/
+            }
             steps
             {
                 echo "Hello World"
